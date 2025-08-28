@@ -10,3 +10,16 @@ nav a {display: block; padding: 15px; text-decoration: none; color: #727272;}
 nav a:hover {color: #39AAE1; font-weight: 600;}
 nav button {padding: 0 10px; margin-left: 10px; border-radius: 10px; border: 0; background-color: #39AAE1; color: #F6F6F6; cursor: pointer;}
 nav button:hover {background-color: #11A8F3; font-weight: 600;}
+
+.banner {background-image: url('../images/medicenter-banner.png'); background-position: center; background-size: cover; display: flex; padding: 0 4%; justify-content: center; height: 650px;}
+.column {flex-direction: column;}
+.banner-title {flex: 1; display: flex; flex-direction: column; justify-content: center;}
+.banner-title h1 {color: #F6F6F6; font-size: 60px; width: 350px; text-shadow: 1px 2px 0 #555;}
+.banner-title p {color: #F6F6F6; font-size: 20px; width: 300px; margin-top: 10px; text-shadow: 0px 1px 0 #555}
+.banner-actions {height: 210px; display: flex;}
+.emergency {background-color: #39AAE1;}
+.schedule {background-color: #0079C7;}
+.insurance {background-color: #2B4C99;}
+.emergency, .schedule, .insurance {flex: 1; color: #F6F6F6; padding: 20px;}
+.emergency p, .schedule p, .insurance p {font-size: 12px; margin: 20px 0;}
+.emergency a, .schedule a, .insurance a {text-decoration: none; display: inline-block; border: 1px solid #F6F6F6; padding: 5px; color: #F6F6F6; font-size: 15px;}
