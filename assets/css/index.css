@@ -52,13 +52,11 @@ aside .checklist {margin: 20px 0;}
 footer {background-color: #1E1E1E; padding: 0 4%;}
 footer .container {flex-direction: column;}
 .footer-nav {display: flex; flex: 1;}
-.fm1, .fm2 {padding: 20px;}
-.fm1 h2, .fm2 h2 {margin-bottom: 20px; color: #F6F6F6;}
-.fm1 p, .fm2 p {font-size: 14px; color: #2C2C2C;}
-.fm1 {flex: 1;}
- .fm2 {flex: 2;}
-.fm1 {background-color: #39AAE1;}
-.fm2 {background-color: #0079C7;}
+.plans {flex: 1; border-bottom-left-radius: 20px; background-color: #39AAE1;}
+.awards {flex: 2; border-bottom-right-radius: 20px; background-color: #0079C7;}
+.plans, .awards {padding: 20px;}
+.plans h2, .awards h2 {margin-bottom: 20px; color: #F6F6F6;}
+.plans p, .awards p {font-size: 14px; color: #2C2C2C;}
 .footer-widgets {display: flex; color: #F6F6F6; margin-top: 40px;}
 .footer-widget {flex: 1; padding: 0 20px;}
 .footer-widget-title {color: #36A9E1; font-weight: 600;}
