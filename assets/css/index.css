@@ -23,13 +23,12 @@ nav button:hover {background-color: #11A8F3; font-weight: 600;}
 .banner-title {flex: 1; display: flex; flex-direction: column; justify-content: center;}
 .banner-title h1 {color: #F6F6F6; font-size: 60px; width: 350px; text-shadow: 1px 2px 0 #555;}
 .banner-title p {color: #F6F6F6; font-size: 20px; width: 300px; margin-top: 10px; text-shadow: 0px 1px 0 #555}
-.banner-actions {height: 210px; display: flex;}
-.emergency {background-color: #39AAE1;}
-.staff {background-color: #0079C7;}
-.structure {background-color: #2B4C99;}
-.emergency, .staff, .structure {flex: 1; color: #F6F6F6; padding: 20px;}
-.emergency p, .staff p, .structure p {font-size: 12px; margin: 20px 0;}
-.emergency a, .staff a, .structure a {text-decoration: none; display: inline-block; border: 1px solid #F6F6F6; padding: 5px; color: #F6F6F6; font-size: 15px;}
+.banner-actions {display: flex; padding: 0 20px;}
+.emergency {background-color: #39AAE1; border-top-left-radius:  20px;}
+.structure {background-color: #0079C7; border-top-right-radius: 20px;}
+.emergency, .structure {flex: 1; color: #F6F6F6; padding: 20px;  }
+.emergency p, .structure p {font-size: 14px; margin: 5px 0 20px 0; color: #2C2C2C;}
+.emergency a, .structure a {text-decoration: none; display: inline-block; border: 1px solid #F6F6F6; padding: 5px; color: #F6F6F6; font-size: 15px;}
 
 .global {display: flex; justify-content:space-between; margin: 40px 4%;}
 .global section {flex: 2;}
