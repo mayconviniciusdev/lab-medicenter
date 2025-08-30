@@ -5,7 +5,7 @@ body {background-color: #F6F6F6; font-family: Arial, Helvetica, sans-serif;}
 .widget-title {font-size: 25px; font: bold; color: #2C2C2C;}
 .widget-bars {width: 50px; height: 2px; background-color: #36A9E1; margin-top: 5px;}
 .widget-body ul {list-style: none;}
-.widget-body li {padding: 2px;}
+.widget-body li {padding: 2px; color: #5C5C5C;}
 .widget-body p {font-weight: 600;}
 
 header {margin: 40px 4%;}
@@ -45,7 +45,9 @@ article .news-resume {font-size: 15px; line-height: 20px; color: #727272; margin
 .global aside {flex: 1;}
 aside {margin-left: 20px;}
 aside span {display: flex}
-aside .checklist {margin: 20px 0;}
+aside .checklist {margin: 12px 0 30px 0;}
+aside .title-checklist {color: #2B4C99;}
+.checklist strong {color: #2B4C99;}
 .checklist ul {margin-top: 5px;}
 .checklist li {color: #5C5C5C;}
 
@@ -64,3 +66,74 @@ footer .container {flex-direction: column;}
 .widget-address div {display: flex; flex-direction: column; margin-top: 20px; color: #555;}
 .links a {color: #5C5C5C; font-size: 20px;}
 .footer-copy {border-top: 1px solid #2C2C2C; margin: 30px 0 10px 0; padding-left: 20px; height: 40px; line-height: 40px; font-size: 12px; color: #5C5C5C;}
+
+/* ----------- SOBRE NÓS ----------- */
+.sobre-wrap {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.sobre-wrap p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #5C5C5C;
+  margin-bottom: 20px;
+}
+
+.sobre-wrap strong {
+  color: #2B4C99;
+}
+
+.sobre-checklist {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sobre-checklist .checklist {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.sobre-checklist strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #0079C7;
+}
+
+.sobre-checklist ul {
+  margin-top: 5px;
+  padding-left: 15px;
+}
+
+.sobre-checklist li {
+  margin-bottom: 6px;
+  color: #5C5C5C;
+  font-size: 15px;
+}
+
+.diferenciais ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.diferenciais li {
+  margin-bottom: 8px;
+  padding-left: 10px;
+  position: relative;
+  color: #5C5C5C;
+}
+
+.diferenciais li::before {
+  content: "✔";
+  position: absolute;
+  left: -10px;
+  color: #39AAE1;
+  font-size: 14px;
+}
