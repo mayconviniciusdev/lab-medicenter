@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
     header .container {flex-direction: row; align-items: center;}
     .logo {justify-content: space-between;}
-    .button-menu {display: block; font-size: 30px; color: #39AEE1;}
-    nav ul {flex-direction: column; padding: 25px 0; margin-top: 20px; position: absolute; left: 0; width: 100%; background-color: #F6F6F6;}
+    .button-menu {display: block; font-size: 30px; color: #39AEE1; cursor: pointer;}
+    nav ul {flex-direction: column; padding: 25px 0; margin-top: 20px; position: absolute; left: 0; width: 100%; background-color: #F6F6F6; display: none;}
     nav li {text-align: right; margin-right: 5px; line-height: 0px;}
     nav button {padding: 10px; width: 20%; margin-left: auto; margin-right: 18px;}
     .banner-actions {flex-direction: column;}
