@@ -12,25 +12,26 @@ header {margin: 40px 4%;}
 .container {max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between;}
 .logo {display: flex; align-items: center;}
 .desktop-menu {display: flex; align-items: center;}
+.button-menu {display: none;}
 nav ul {list-style: none; display: flex;}
 nav a {display: block; padding: 15px; text-decoration: none; color: #727272;}
 nav a:hover {color: #39AAE1; font-weight: 600;}
 nav button {padding: 0 10px; margin-left: 10px; border-radius: 10px; border: 0; background-color: #39AAE1; color: #F6F6F6; cursor: pointer;}
 nav button:hover {background-color: #11A8F3; font-weight: 600;}
 
-.banner {background-image: url('../images/medicenter-banner.png'); background-position: center; background-size: cover; display: flex; padding: 0 4%; justify-content: center; height: 650px;}
-.column {flex-direction: column;}
+.banner {background-image: url('../images/medicenter-banner.png'); background-position: center; background-size: cover; display: flex; justify-content: center; height: 650px;}
+.column {flex-direction: column; padding: 0 4%; width: 100%;}
 .banner-title {flex: 1; display: flex; flex-direction: column; justify-content: center;}
 .banner-title h1 {color: #F6F6F6; font-size: 60px; width: 350px; text-shadow: 1px 2px 0 #555;}
 .banner-title p {color: #F6F6F6; font-size: 20px; width: 300px; margin-top: 10px; text-shadow: 0px 1px 0 #555}
-.banner-actions {display: flex; padding: 0 20px;}
-.emergency {background-color: #39AAE1; border-top-left-radius:  20px;}
+.banner-actions {display: flex;}
+.emergency {background-color: #39AAE1; border-top-left-radius: 20px;}
 .structure {background-color: #0079C7; border-top-right-radius: 20px;}
 .emergency, .structure {flex: 1; color: #F6F6F6; padding: 20px;  }
 .emergency p, .structure p {font-size: 14px; margin: 5px 0 20px 0; color: #2C2C2C;}
 .emergency a, .structure a {text-decoration: none; display: inline-block; border: 1px solid #F6F6F6; padding: 5px; color: #F6F6F6; font-size: 15px;}
 
-.global {display: flex; justify-content:space-between; margin: 40px 4%;}
+.global {display: flex; justify-content: center; margin: 40px 4%;}
 .global section {flex: 2;}
 section .flex {display: flex; flex-wrap: wrap;}
 .flex article {flex: 1; min-width: 300px; margin-right: 20px;}
@@ -65,75 +66,5 @@ footer .container {flex-direction: column;}
 .footer-widget .widget-body {margin-top: 20px; color: #555;}
 .widget-address div {display: flex; flex-direction: column; margin-top: 20px; color: #555;}
 .links a {color: #5C5C5C; font-size: 20px;}
-.footer-copy {border-top: 1px solid #2C2C2C; margin: 30px 0 10px 0; padding-left: 20px; height: 40px; line-height: 40px; font-size: 12px; color: #5C5C5C;}
-
-/* ----------- SOBRE NÓS ----------- */
-.sobre-wrap {
-  margin: 40px 0;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-.sobre-wrap p {
-  font-size: 16px;
-  line-height: 24px;
-  color: #5C5C5C;
-  margin-bottom: 20px;
-}
-
-.sobre-wrap strong {
-  color: #2B4C99;
-}
-
-.sobre-checklist {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.sobre-checklist .checklist {
-  flex: 1;
-  min-width: 250px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-.sobre-checklist strong {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 18px;
-  color: #0079C7;
-}
-
-.sobre-checklist ul {
-  margin-top: 5px;
-  padding-left: 15px;
-}
-
-.sobre-checklist li {
-  margin-bottom: 6px;
-  color: #5C5C5C;
-  font-size: 15px;
-}
-
-.diferenciais ul {
-  list-style: none;
-  margin-top: 10px;
-}
-
-.diferenciais li {
-  margin-bottom: 8px;
-  padding-left: 10px;
-  position: relative;
-  color: #5C5C5C;
-}
-
-.diferenciais li::before {
-  content: "✔";
-  position: absolute;
-  left: -10px;
-  color: #39AAE1;
-  font-size: 14px;
-}
+.footer-copy {border-top: 1px solid #2C2C2C; margin: 30px 0 10px 0; padding-left: 20px;}
+.footer-copy p {font-size: 12px; color: #5C5C5C; margin: 20px 0;}
