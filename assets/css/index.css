@@ -1,17 +1,16 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 body {background-color: #F6F6F6; font-family: Arial, Helvetica, sans-serif;}
 
+.global {display: flex; justify-content: center; margin: 40px 4%;}
+.global section {flex: 2;}
 .widget-wrap {margin: 30px 0 20px 0;}
 .widget-title {font-size: 25px; font: bold; color: #2C2C2C;}
 .widget-bars {width: 50px; height: 2px; background-color: #36A9E1; margin-top: 5px;}
-.widget-body ul {list-style: none;}
-.widget-body li {padding: 2px; color: #5C5C5C;}
-.widget-body p {font-weight: 600;}
+aside {flex: 1; margin-left: 20px;}
 
 header {margin: 40px 4%;}
 .container {max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between;}
-.logo {display: flex; align-items: center;}
-.desktop-menu {display: flex; align-items: center;}
+.logo, .menu {display: flex; align-items: center;}
 .button-menu {display: none;}
 nav ul {list-style: none; display: flex;}
 nav a {display: block; padding: 15px; text-decoration: none; color: #727272;}
@@ -20,7 +19,7 @@ nav button {padding: 0 10px; margin-left: 10px; border-radius: 10px; border: 0; 
 nav button:hover {background-color: #11A8F3; font-weight: 600;}
 
 .banner {background-image: url('../images/medicenter-banner.png'); background-position: center; background-size: cover; display: flex; justify-content: center; height: 650px;}
-.column {flex-direction: column; padding: 0 4%; width: 100%;}
+.container-column {flex-direction: column; padding: 0 4%; width: 100%;}
 .banner-title {flex: 1; display: flex; flex-direction: column; justify-content: center;}
 .banner-title h1 {color: #F6F6F6; font-size: 60px; width: 350px; text-shadow: 1px 2px 0 #555;}
 .banner-title p {color: #F6F6F6; font-size: 20px; width: 300px; margin-top: 10px; text-shadow: 0px 1px 0 #555}
@@ -31,10 +30,8 @@ nav button:hover {background-color: #11A8F3; font-weight: 600;}
 .emergency p, .structure p {font-size: 14px; margin: 5px 0 20px 0; color: #2C2C2C;}
 .emergency a, .structure a {text-decoration: none; display: inline-block; border: 1px solid #F6F6F6; padding: 5px; color: #F6F6F6; font-size: 15px;}
 
-.global {display: flex; justify-content: center; margin: 40px 4%;}
-.global section {flex: 2;}
-section .flex {display: flex; flex-wrap: wrap;}
-.flex article {flex: 1; min-width: 300px; margin-right: 20px;}
+.article-body {display: flex; flex-wrap: wrap;}
+.article-body article {flex: 1; min-width: 300px; margin-right: 20px;}
 article a {text-decoration: none;}
 article .news-data {display: flex;}
 article .news-posted-at {background-color: #2B4C99; color: #F6F6F6; padding: 10px; font-size: 12px; margin-right: 2px;}
@@ -43,14 +40,14 @@ article .news-img {margin-top: 10px;}
 article .news-img img {width: 100%; height: auto;}
 article .news-title {margin: 10px 0; font-size: 24px; color: #2B4C99;}
 article .news-resume {font-size: 15px; line-height: 20px; color: #727272; margin-bottom: 30px;}
-.global aside {flex: 1;}
-aside {margin-left: 20px;}
-aside span {display: flex}
-aside .checklist {margin: 12px 0 30px 0;}
-aside .title-checklist {color: #2B4C99;}
-.checklist strong {color: #2B4C99;}
-.checklist ul {margin-top: 5px;}
-.checklist li {color: #5C5C5C;}
+.aside-body ul {list-style: none;}
+.aside-body li {padding: 2px; color: #5C5C5C;}
+.aside-body p {font-weight: 600;}
+.aside-checklist-title {color: #2B4C99;}
+.aside-checklist {margin: 12px 0 30px 0;}
+.aside-checklist strong {color: #2B4C99;}
+.aside-checklist ul {margin-top: 5px;}
+.aside-checklist li {color: #5C5C5C;}
 
 footer {background-color: #1E1E1E; padding: 0 4%;}
 footer .container {flex-direction: column;}
@@ -63,8 +60,9 @@ footer .container {flex-direction: column;}
 .footer-widgets {display: flex; color: #F6F6F6; margin-top: 40px;}
 .footer-widget {flex: 1; padding: 0 20px;}
 .footer-widget-title {color: #36A9E1; font-weight: 600;}
-.footer-widget .widget-body {margin-top: 20px; color: #555;}
-.widget-address div {display: flex; flex-direction: column; margin-top: 20px; color: #555;}
+.footer-body {margin-top: 20px; color: #555;}
+.footer-body li {list-style: none;}
+.address div {display: flex; flex-direction: column; margin-top: 20px; color: #555;}
 .links a {color: #5C5C5C; font-size: 20px;}
 .footer-copy {border-top: 1px solid #2C2C2C; margin: 30px 0 10px 0; padding-left: 20px;}
 .footer-copy p {font-size: 12px; color: #5C5C5C; margin: 20px 0;}
