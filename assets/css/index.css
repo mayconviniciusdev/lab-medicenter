@@ -49,6 +49,13 @@ article .news-resume {font-size: 15px; line-height: 20px; color: #727272; margin
 .aside-checklist ul {margin-top: 5px;}
 .aside-checklist li {color: #5C5C5C;}
 
+.container-about {align-items: center;}
+.text-about p {margin: 25px 0; max-width: 580px; color: #5C5C5C;}
+.pillars {background-color: #2B4C99; color: #F6F6F6; padding: 15px; margin: 30px 0; border-radius: 8px; box-shadow: 0 8px 20px rgb(44, 44, 0.9);}
+.pillars .widget-wrap {margin: 10px 0 20px 0;}
+.pillars-title {font-size: 20px;}
+.pillars .widget-bars {width: 40%;}
+
 footer {background-color: #1E1E1E; padding: 0 4%;}
 footer .container {flex-direction: column;}
 .footer-nav {display: flex; flex: 1;}
