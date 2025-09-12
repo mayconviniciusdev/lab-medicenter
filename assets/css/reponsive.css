@@ -14,6 +14,7 @@
     aside .widget:first-child .widget-wrap {margin-top: 0;}
 
     .container-about {align-items: start;}
+    .swiper {width: 50%;}
 
     .footer-nav {flex-direction: column;}
     .plans {border-bottom-left-radius: 0; border-top-left-radius: 20px;}
