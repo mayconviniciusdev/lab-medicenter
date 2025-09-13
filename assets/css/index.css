@@ -69,6 +69,7 @@ aside {flex: 1; margin-left: 20px;}
 .btn-insurance {display: inline-block; padding: 12px 25px; border-radius: 8px; background-color: #0077b6; color: #F6F6F6 !important; font-weight: 600; text-decoration: none;}
 .btn-insurance:hover {background-color: #005f87;}
 
+/* medical staff */
 .container-medical {flex-direction: column; width: 100%;}
 .container-medical .widget-wrap {margin: 0;}
 .container-medical .widget-text p {margin: 25px 0 0 0; max-width: 580px; color: #5C5C5C;}
