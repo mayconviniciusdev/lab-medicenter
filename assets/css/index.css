@@ -50,15 +50,15 @@ aside {flex: 1; margin-left: 20px;}
 .aside-checklist ul {margin-top: 5px;}
 .aside-checklist li {color: #5C5C5C;}
 
+/* about [body]*/
 .container-about {flex-direction: column; width: 100%;}
 .container-about .widget-wrap {margin: 0;}
-.container-about aside { display: flex; gap: 35px; margin: 0; flex-wrap: wrap;}
 .text-about p {margin: 25px 0; max-width: 580px; color: #5C5C5C;}
-.pillars { background-color: #2B4C99; color: #F6F6F6; padding: 15px; border-radius: 8px; box-shadow: 0 8px 20px rgb(44, 44, 0.9);  max-width: 300px;}
-.pillars .widget-wrap {margin: 10px 0 20px 0; }
-.pillars-title {font-size: 20px;}
-.pillars .widget-bars {width: 40%;}
-
+.widget-pillars { display: flex; gap: 35px; margin: 0; flex-wrap: wrap;}
+.widget-pillars .widget-title {color: #F6F6F6;}
+.pillars {background-color: #2B4C99; color: #F6F6F6; padding: 15px; border-radius: 8px; box-shadow: 0 8px 20px rgb(44, 44, 0.9);  max-width: 300px;}
+.pillars .widget-wrap {margin: 10px 0 20px 0;}
+/* about [agreement] */
 .agreement-container {width: 100%;}
 .agreement-container .widget-text p {max-width: 680px; margin-top: 20px; color: #727272; margin-bottom: 8px;}
 .agreement-container .widget-wrap {margin-top: 60px;}
