@@ -79,20 +79,22 @@ article .news-resume {font-size: 15px; line-height: 20px; color: #727272; margin
 .doctor-info {margin-top: 20px; color: #F6F6F6;}
 .doctor-info p {font-size: small;}
 
-footer {background-color: #1E1E1E; padding: 0 4%;}
-footer .container {flex-direction: column;}
-.footer-nav {display: flex; flex: 1;}
-.plans {flex: 1; border-bottom-left-radius: 20px; background-color: #39AAE1;}
-.awards {flex: 2; border-bottom-right-radius: 20px; background-color: #0079C7;}
-.plans, .awards {padding: 20px;}
-.plans h2, .awards h2 {margin-bottom: 20px; color: #F6F6F6;}
-.plans p, .awards p {font-size: 14px; color: #2C2C2C;}
+/* footer [global] */
+footer {background-color: #1E1E1E;}
+.footer-widgets .widget-wrap {flex: 1; padding: 0 20px;}
+.footer-widgets .widget-title {color: #36A9E1; font-weight: 600;}
+.footer-widgets .widget-body {margin-top: 20px; color: #555;}
+/* footer body */
+.footer-actions {display: flex;}
+.footer-actions .opening-hours {flex: 1; border-bottom-left-radius: 20px; background-color: #39AAE1;}
+.footer-actions .awards {flex: 2; border-bottom-right-radius: 20px; background-color: #0079C7;}
+.opening-hours, .awards {padding: 20px;}
+.opening-hours h2, .awards h2 {margin-bottom: 20px; color: #F6F6F6;}
+.opening-hours p, .awards p {font-size: 14px; color: #2C2C2C;}
 .footer-widgets {display: flex; color: #F6F6F6; margin-top: 40px;}
-.footer-widget {flex: 1; padding: 0 20px;}
-.footer-widget-title {color: #36A9E1; font-weight: 600;}
-.footer-body {margin-top: 20px; color: #555;}
-.footer-body li {list-style: none;}
-.address div {display: flex; flex-direction: column; margin-top: 20px; color: #555;}
-.links a {color: #5C5C5C; font-size: 20px;}
-.footer-copy {border-top: 1px solid #2C2C2C; margin: 30px 0 10px 0; padding-left: 20px;}
-.footer-copy p {font-size: 12px; color: #5C5C5C; margin: 20px 0;}
+.widget-body .address {margin-top: 20px;}
+.address span {display: flex; flex-direction: column; color: #555;}
+.widget-body li {list-style: none;}
+.widget-body a {color: #5C5C5C; font-size: 20px;}
+.copyright {border-top: 1px solid #2C2C2C; margin: 30px 0 10px 0; padding-left: 20px;}
+.copyright p {font-size: 12px; color: #5C5C5C; margin: 20px 0;}
