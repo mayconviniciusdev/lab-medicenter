@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Contato - MediCenter</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/reponsive.css">
+  <script src="https://kit.fontawesome.com/ff3aca8bd5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="header"></header>
+
+  <section class="global">
+    <div class="container container-contact">
+      <div class="widget-wrap">
+        <div class="widget-title">Entre em Contato</div>
+        <div class="widget-bars"></div>
+
+        <p>Estamos à disposição para tirar dúvidas, agendar consultas e ouvir suas sugestões.</p>
+      </div>
+
+      <div class="contact-content">
+        <!-- FORMULÁRIO -->
+        <div class="contact-form">
+          <form action="mailto:contato@medicenter.com" method="post" enctype="text/plain">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+          </form>
+        </div>
+
+        <!-- INFORMAÇÕES DE CONTATO -->
+        <div class="contact-info">
+          <h3><i class="fas fa-phone"></i> Telefones:</h3>
+          <p>(21) 3256-4821</p>
+          <p>(21) 3256-4321 - Emergências</p>
+          <p>(21) 98876-7777 - WhatsApp</p>
+
+          <h3><i class="fas fa-envelope"></i> E-mail:</h3>
+          <p>contato@medicenter.com</p>
+
+          <h3><i class="fas fa-map-marker-alt"></i> Endereço:</h3>
+          <p>208 - Av. José Bonatto <br/>Barra da Tijuca - RJ</p>
+        </div>
+      </div>
+
+      <!-- MAPA -->
+      <div class="contact-map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.358345389999!2d-43.365556!3d-22.978064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f62db08ffb5%3A0x7b9e9a9f1d03f6c7!2sRio%20de%20Janeiro!5e0!3m2!1spt-BR!2sbr!4v1692309430336!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="350"
+          style="border:0;"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/loadComponents.js"></script>
+</body>
+</html>
