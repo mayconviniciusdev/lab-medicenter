@@ -1,16 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-	fetch('../../components/header-menu.html')
-	.then(res => res.text())
-	.then(data => {
-		const header = document.getElementById('header');
-		header.innerHTML = data;
+  const basePath = window.location.pathname.includes('/html/') ? '../' : '';
 
-		initMenu();
-	})
-	.catch(err => console.error('Erro ao carregar header:', err));
+  function loadComponent(selector, path) {
+    fetch(`${basePath}${path}`)
+      .then(res => res.text())
+      .then(data => {
+        const element = document.querySelector(selector);
+        if (element) element.innerHTML = data;
+      })
+      .catch(err => console.error(`Erro ao carregar ${selector}:`, err));
+  }
 
-    fetch('../../components/footer.html')
-		.then(res => res.text())
-		.then(data => { document.getElementById('footer').innerHTML = data; })
-		.catch(err => console.error('Erro ao carregar footer:', err));
+  loadComponent('#header', 'components/header-menu.html');
+  if (typeof initMenu === 'function') initMenu();
+
+  loadComponent('#footer', 'components/footer.html');
 });
