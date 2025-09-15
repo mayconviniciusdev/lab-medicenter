@@ -6,13 +6,28 @@ document.addEventListener("DOMContentLoaded", () => {
       .then(res => res.text())
       .then(data => {
         const element = document.querySelector(selector);
-        if (element) element.innerHTML = data;
+        if (!element) return;
+        element.innerHTML = data;
+
+        if (selector === '#header') {
+          element.querySelectorAll('a[href^="html/"]').forEach(link => {
+            link.href = basePath + link.getAttribute('href');
+          });
+
+          const logoImg = element.querySelector('#logo');
+          if (logoImg) {
+            logoImg.src = basePath + 'assets/images/medicenter-logo.png';
+          }
+
+					const logoLink = element.querySelector('.logo a');
+					if (logoLink) logoLink.href = basePath + 'index.html';
+
+          if (typeof initMenu === 'function') initMenu();
+        }
       })
       .catch(err => console.error(`Erro ao carregar ${selector}:`, err));
   }
 
   loadComponent('#header', 'components/header-menu.html');
-  if (typeof initMenu === 'function') initMenu();
-
   loadComponent('#footer', 'components/footer.html');
 });
