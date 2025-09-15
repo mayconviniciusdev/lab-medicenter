@@ -1,4 +1,5 @@
 @media (max-width: 768px) {
+    /* header */
     header .container {flex-direction: row; align-items: center;}
     .logo {justify-content: space-between;}
     .button-menu {display: block; font-size: 30px; color: #39AEE1; cursor: pointer;}
@@ -8,25 +9,45 @@
     .banner-actions {flex-direction: column;}
     .structure {border-bottom-right-radius: 20px; border-top-right-radius: 0;}
 
-    .global .container {flex-direction: column; margin: 0;}
-    .global article {margin-right: 0;}
-    .global aside {margin-left: 0;}
+    /* initial [banner] */
+    .container {flex-direction: column; margin: 0;}
+    article {margin-right: 0;}
+    aside {margin-left: 0;}
     aside .widget:first-child .widget-wrap {margin-top: 0;}
 
+    /* about [body] */
     .container-about {align-items: start;}
+    .widget-pillars {display: block;}
+    .pillars:nth-of-type(2) {margin: 30px 0;}
+    .agreement-container .widget-wrap {margin-top: 50px;}
+    .agreement-list {margin: 20px 0 40px 0; justify-content: space-around;}
+    .structure-features {flex-wrap: wrap;}
+
+    /* medical staff */
     .swiper {width: 50%;}
 
+    /* footer */
     .footer-nav {flex-direction: column;}
-    .plans {border-bottom-left-radius: 0; border-top-left-radius: 20px;}
+    .footer-actions {flex-direction: column;}
+    .footer-actions .opening-hours{border-bottom-left-radius: 0; border-top-left-radius: 20px;}
     .footer-widgets {flex-direction: column;}
     .footer-widget {padding: 20px 0;}
     .footer-copy {padding-left: 0;}
 }
 
 @media (max-width: 425px) {
+    /* header */
     nav button {width: 50%;}
     .banner-title {text-align: center;}
     .banner-title h1 {font-size: 40px; width: auto;}
     .banner-title p {font-size: 16px; width: auto;}
-    .checklist li {font-size: 14px;}
+
+    /* about */
+    .feature-card {width: 100%;}
+    .feature-card img {height: 300px; max-width: 300px;}
+}
+
+@media (max-width: 375px) {
+    /* about */
+    .agreement-card {width: 100%;}
 }
