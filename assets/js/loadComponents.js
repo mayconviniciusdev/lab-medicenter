@@ -14,10 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
             link.href = basePath + link.getAttribute('href');
           });
 
-          const logoImg = element.querySelector('#logo');
-          if (logoImg) {
-            logoImg.src = basePath + 'assets/images/medicenter-logo.png';
-          }
+          const logoImg = element.querySelector('.logo img');
+          if (logoImg) logoImg.src = basePath + 'assets/images/medicenter-logo.png';
 
 					const logoLink = element.querySelector('.logo a');
 					if (logoLink) logoLink.href = basePath + 'index.html';
