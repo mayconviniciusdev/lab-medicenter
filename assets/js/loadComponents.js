@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-	fetch('../../components/header.html')
+	fetch('../../components/header-menu.html')
 	.then(res => res.text())
 	.then(data => {
 		const header = document.getElementById('header');
