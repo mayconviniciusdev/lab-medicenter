@@ -5,7 +5,7 @@
     .button-menu {display: block; font-size: 30px; color: #39AEE1; cursor: pointer;}
     nav ul {flex-direction: column; padding: 25px 0; position: absolute; left: 0; width: 100%; background-color: #F6F6F6; display: none;}
     nav li {text-align: right; margin-right: 5px; line-height: 0px;}
-    .btn-contat {padding: 10px; width: 25%; margin-left: auto; margin-right: 18px; text-align: right;}
+    .btn-contact {padding: 10px; width: 25%; margin-left: auto; margin-right: 18px; text-align: right;}
     .banner-actions {flex-direction: column;}
     .structure {border-bottom-right-radius: 20px; border-top-right-radius: 0;}
 
@@ -37,7 +37,7 @@
 
 @media (max-width: 425px) {
     /* header */
-    .btn-contat {width: 50%;}
+    .btn-contact {width: 50%;}
     .banner-title {text-align: center;}
     .banner-title h1 {font-size: 40px; width: auto;}
     .banner-title p {font-size: 16px; width: auto;}
