@@ -15,8 +15,8 @@ header {margin: 40px 4%;}
 nav ul {list-style: none; display: flex;}
 nav a {display: block; padding: 15px; text-decoration: none; color: #727272;}
 nav a:hover {color: #39AAE1; font-weight: 600;}
-.btn-contact {padding: 0 10px; margin-left: 10px; border-radius: 10px; border: 0; background-color: #39AAE1; color: #F6F6F6; cursor: pointer;}
-.btn-contact:hover {background-color: #11A8F3; font-weight: 600;}
+.btn-contact {padding: 15px; margin-left: 10px; border-radius: 10px; border: 0; background-color: #39AAE1; color: #F6F6F6 !important; cursor: pointer;}
+.btn-contact:hover {background-color: #11A8F3;}
 
 /* initial [banner] */
 .banner {background-image: url('../images/medicenter-banner.png'); background-position: center; background-size: cover; display: flex; justify-content: center; height: 650px;}
